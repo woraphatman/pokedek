@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokepokemon/pokemondata.dart';
 
 class PokemonsScreen extends StatelessWidget {
   const PokemonsScreen({Key? key}) : super(key: key);
@@ -35,22 +36,313 @@ class PokemonsScreen extends StatelessWidget {
           mainAxisSpacing: 10,
           crossAxisCount: 2,
           children: <Widget>[
-            Container(
-              padding: const EdgeInsets.all(8),
-              child: const Text('22323'),
-            ),
-            Container(
-                padding: const EdgeInsets.all(8),
-                decoration: const BoxDecoration(
-                  color: Color(0xffEDBDE5),
-                  image: DecorationImage(
-                    image: AssetImage("assets/001.png"),
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: const BoxDecoration(
+                    color: Color(0xffEDBDE5),
+                  ),
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        pokemon_data[0]["img"],
+                        fit: BoxFit.fill,
+                      ),
+                      Text(pokemon_data[0]["name"],
+                          style: const TextStyle(fontSize: 30)),
+                      Text(pokemon_data[0]["type"],
+                          style: const TextStyle(fontSize: 30)),
+                    ],
                   ),
                 ),
-                child: Text("Bulbasaur #001", style: TextStyle(fontSize: 30))),
-            Container(
-              padding: const EdgeInsets.all(8),
-              child: const Text('22323'),
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: const BoxDecoration(
+                    color: Color(0xffBDEDC2),
+                  ),
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        pokemon_data[1]["img"],
+                        fit: BoxFit.fill,
+                      ),
+                      Text(pokemon_data[1]["name"],
+                          style: const TextStyle(fontSize: 30)),
+                      Text(pokemon_data[1]["type"],
+                          style: const TextStyle(fontSize: 30)),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: const BoxDecoration(
+                    color: Color(0xff7B62A3),
+                  ),
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        pokemon_data[2]["img"],
+                        fit: BoxFit.fill,
+                      ),
+                      Text(pokemon_data[2]["name"],
+                          style: const TextStyle(fontSize: 30)),
+                      Text(pokemon_data[2]["type"],
+                          style: const TextStyle(fontSize: 30)),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: const BoxDecoration(
+                    color: Color(0xff573D2A),
+                  ),
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        pokemon_data[3]["img"],
+                        fit: BoxFit.fill,
+                      ),
+                      Text(pokemon_data[3]["name"],
+                          style: const TextStyle(fontSize: 30)),
+                      Text(pokemon_data[3]["type"],
+                          style: const TextStyle(fontSize: 30)),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: const BoxDecoration(
+                    color: Color(0xffEDBDE5),
+                  ),
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        pokemon_data[4]["img"],
+                        fit: BoxFit.fill,
+                      ),
+                      Text(pokemon_data[4]["name"],
+                          style: const TextStyle(fontSize: 30)),
+                      Text(pokemon_data[4]["type"],
+                          style: const TextStyle(fontSize: 30)),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: const BoxDecoration(
+                    color: Color(0xffEDBDE5),
+                  ),
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        pokemon_data[5]["img"],
+                        fit: BoxFit.fill,
+                      ),
+                      Text(pokemon_data[5]["name"],
+                          style: const TextStyle(fontSize: 30)),
+                      Text(pokemon_data[5]["type"],
+                          style: const TextStyle(fontSize: 30)),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: const BoxDecoration(
+                    color: Color(0xffEDBDE5),
+                  ),
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        pokemon_data[6]["img"],
+                        fit: BoxFit.fill,
+                      ),
+                      Text(pokemon_data[6]["name"],
+                          style: const TextStyle(fontSize: 30)),
+                      Text(pokemon_data[6]["type"],
+                          style: const TextStyle(fontSize: 30)),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: const BoxDecoration(
+                    color: Color(0xffEDBDE5),
+                  ),
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        pokemon_data[7]["img"],
+                        fit: BoxFit.fill,
+                      ),
+                      Text(pokemon_data[7]["name"],
+                          style: const TextStyle(fontSize: 30)),
+                      Text(pokemon_data[7]["type"],
+                          style: const TextStyle(fontSize: 30)),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: const BoxDecoration(
+                    color: Color(0xffEDBDE5),
+                  ),
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        pokemon_data[8]["img"],
+                        fit: BoxFit.fill,
+                      ),
+                      Text(pokemon_data[8]["name"],
+                          style: const TextStyle(fontSize: 30)),
+                      Text(pokemon_data[8]["type"],
+                          style: const TextStyle(fontSize: 30)),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: const BoxDecoration(
+                    color: Color(0xffEDBDE5),
+                  ),
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        pokemon_data[9]["img"],
+                        fit: BoxFit.fill,
+                      ),
+                      Text(pokemon_data[9]["name"],
+                          style: const TextStyle(fontSize: 30)),
+                      Text(pokemon_data[9]["type"],
+                          style: const TextStyle(fontSize: 30)),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: const BoxDecoration(
+                    color: Color(0xffEDBDE5),
+                  ),
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        pokemon_data[10]["img"],
+                        fit: BoxFit.fill,
+                      ),
+                      Text(pokemon_data[10]["name"],
+                          style: const TextStyle(fontSize: 30)),
+                      Text(pokemon_data[10]["type"],
+                          style: const TextStyle(fontSize: 30)),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: const BoxDecoration(
+                    color: Color(0xffEDBDE5),
+                  ),
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        pokemon_data[11]["img"],
+                        fit: BoxFit.fill,
+                      ),
+                      Text(pokemon_data[11]["name"],
+                          style: const TextStyle(fontSize: 30)),
+                      Text(pokemon_data[11]["type"],
+                          style: const TextStyle(fontSize: 30)),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: const BoxDecoration(
+                    color: Color(0xffEDBDE5),
+                  ),
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        pokemon_data[12]["img"],
+                        fit: BoxFit.fill,
+                      ),
+                      Text(pokemon_data[12]["name"],
+                          style: const TextStyle(fontSize: 30)),
+                      Text(pokemon_data[12]["type"],
+                          style: const TextStyle(fontSize: 30)),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: const BoxDecoration(
+                    color: Color(0xffEDBDE5),
+                  ),
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        pokemon_data[13]["img"],
+                        fit: BoxFit.fill,
+                      ),
+                      Text(pokemon_data[13]["name"],
+                          style: const TextStyle(fontSize: 30)),
+                      Text(pokemon_data[13]["type"],
+                          style: const TextStyle(fontSize: 30)),
+                    ],
+                  ),
+                ),
+              ],
             ),
           ],
         ));
@@ -58,9 +350,29 @@ class PokemonsScreen extends StatelessWidget {
 }
 
 class DataSearch extends SearchDelegate<String> {
-  final pokemon = ["dssd", "dsdad", "dsds", "01", "02", "03"];
+  final pokemon = [
+    "Slowpoke",
+    "Cubone",
+    "Ponyta",
+    "Abra",
+    "Charmander",
+    "Cubone",
+    "001",
+    "002",
+    "003",
+    "004",
+    "005",
+    "006"
+  ];
 
-  final recenpokemon = ["dssd", "dsdad", "dsds", "01", "02", "03"];
+  final recenpokemon = [
+    "Slowpoke",
+    "Cubone",
+    "Ponyta",
+    "Abra",
+    "Charmander",
+    "Cubone"
+  ];
 
   @override
   List<Widget> buildActions(BuildContext context) {
