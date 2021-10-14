@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:pokepokemon/pokemons_screen.dart';
-import 'package:pokepokemon/pokepage.dart';
 
 void main() {
   runApp(const PokemonApp());
@@ -16,7 +15,8 @@ class PokemonApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: const Color(0xffC5DCED),
       ),
-      home: const Pokepage(),
+      home: const PokemonsScreen(),
+      initialRoute: 'pokemons_screen',
     );
   }
 }
